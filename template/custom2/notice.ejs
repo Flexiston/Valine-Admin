@@ -1,0 +1,154 @@
+<head>
+  <base target="_blank" />
+  <style type="text/css">
+    @font-face {
+      font-family: 'Varela Round';
+      src: url(https://cdn.jsdelivr.net/gh/xaoxuu/cdn-fonts/VarelaRound/VarelaRound-Regular.ttf);
+      font-weight: 400;
+      font-style: normal;
+    }
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  </style>
+  <style id="cloudAttachStyle" type="text/css">
+    #divNeteaseBigAttach,
+    #divNeteaseBigAttach_bak {
+      display: none;
+    }
+  </style>
+  <style id="blockquoteStyle" type="text/css">
+    blockquote {
+      display: none;
+    }
+  </style>
+</head>
+
+<body tabindex="0" role="listitem">
+  <div id="content">
+    <div style="background: white;
+      width: 95%;
+      max-width: 800px;
+      margin: auto auto;
+      border-radius: 5px;
+      border:<%=main_color%> 1px solid;
+      overflow: hidden;
+      -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.12);
+      box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.18);">
+      <header style="overflow: hidden;">
+        <img style="width:100%;z-index: 666;" src="<%=main_img%>" />
+      </header>
+      <div style="padding: 5px 20px;">
+        <p style="position: relative;
+        color: white;
+        float: left;
+        z-index: 999;
+        background: <%=main_color%>;
+        padding: 5px 30px;
+        margin: -25px auto 0 ;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.30)">
+          Dear <%=siteName%>
+        </p>
+        <br />
+        <center>
+          <h3>
+            来自 <span style="text-decoration: none;color: <%=main_color%> "><%=name%>（<%=mail%>）</span> 的评论
+          </h3>
+        </center>
+        <br />
+        &nbsp; &nbsp;
+        <p>
+          Ta 在 <a style="text-decoration: none;color: <%=main_color%> " target="_blank"
+            href="<%=url%>"><%=siteName%></a> 上发表的评论：
+        </p>
+        &nbsp; &nbsp;
+        <div style="background: #fafafa repeating-linear-gradient(-45deg,#fff,#fff 1.125rem,transparent 1.125rem,transparent 2.25rem);box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);margin:20px 0px;padding:15px;border-radius:5px;font-size:14px;color:#555555;"><%-text%></div>
+        &nbsp; &nbsp;
+        <br />
+        <div style="text-align: center;margin-top: 40px;">
+          <img src="https://ae01.alicdn.com/kf/U0968ee80fd5c4f05a02bdda9709b041eE.png" alt="hr" style="width:100%;
+                                                                                                  margin:5px auto 5px auto;
+                                                                                                  display: block;" />
+          <a style="text-decoration: none;
+                      font-size: 14px;
+                      border-radius: 5px;
+                      background-color: <%=main_color%>;
+                      color: #fff;
+                      padding: 10px;
+                      display: inline-block;
+                      margin: 10px auto 0; " target="_blank"
+            href="<%=url%>"><%=siteName%>｜传送！Biu~</a>
+        </div>
+        &nbsp; &nbsp;
+        <p style="font-size: 12px;text-align: center;color: #999;">
+          IP：<%=ip%><br />
+          © 2020 <a style="text-decoration:none; color:<%=main_color%>" href="<%=siteUrl%>"> <%=siteName%>
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+  <script>
+    var _c = document.getElementById("content");
+    _c.innerHTML = (_c.innerHTML || "")
+      .replace(/(href|formAction|onclick|javascript)/gi, "__$1")
+      .replace(/<\/?marquee>/gi, "");
+  </script>
+  <style type="text/css">
+    body {
+      font-size: 14px;
+      font-family: 'Varela Round', arial, verdana, sans-serif;
+      line-height: 1.666;
+      padding: 0;
+      margin: 0;
+      overflow: auto;
+      white-space: normal;
+      word-wrap: break-word;
+      min-height: 100px;
+    }
+    td,
+    input,
+    button,
+    select,
+    body {
+      font-family: 'Varela Round', Helvetica, "Microsoft Yahei", verdana;
+    }
+    pre {
+      white-space: pre-wrap;
+      white-space: -moz-pre-wrap;
+      white-space: -pre-wrap;
+      white-space: -o-pre-wrap;
+      word-wrap: break-word;
+      width: 95%;
+    }
+    th,
+    td {
+      font-family: 'Varela Round', arial, verdana, sans-serif;
+      line-height: 1.666;
+    }
+    img {
+      border: 0;
+    }
+    header,
+    footer,
+    section,
+    aside,
+    article,
+    nav,
+    hgroup,
+    figure,
+    figcaption {
+      display: block;
+    }
+    blockquote {
+      margin-right: 0px;
+    }
+  </style>
+
+  <style id="ntes_link_color" type="text/css">
+    a,
+    td a {
+      color: #236da1;
+    }
+  </style>
+</body>

@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+<head>
+    <title>Flexiston 的评论管理后台</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="shortcut icon" href="/favicon.ico">
+</head>
+
+<body>
+
+    <div class="sign-in-wrap">
+        <p class="title">Flexiston 的评论管理后台</p>
+        <form method="post" action="/login" class="gh-signin">
+            <input tabindex="1" name="username" placeholder="用户名" autofocus="" type="text" class="gh-input">
+            <input tabindex="2" name="password" placeholder="密码" type="password" class="password gh-input ember-view">
+
+            <input tabindex="3" type="submit" class="login-button" value="登录">
+        </form>
+        <div class="footer">
+            <p><a href="https://flexiston.com">Flexiston's Blog</a> | Modified By <a href="https://www.antmoe.com" rel="external nofollow noopener noreferrer">Dreamy.TZK</a></p>
+            <p><a href="http://beian.miit.gov.cn/" target="_blank" rel="external nofollow noopener noreferrer"><%= ICP %></a> </p>
+            <%- INFO %>
+        </div>
+</body>
+
+</html>
