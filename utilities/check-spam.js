@@ -15,16 +15,15 @@ exports.checkSpam = (comment, ip) => {
     return;
   } else {
     if (process.env.SPAM_WORDS) {
-      console.log("检测到添加屏蔽关键词，进行关键词检验");
-      //关键词用半角逗号分隔
+      console.log("检测到BAN关键词变量，正在检验评论");
+      // 关键词用半角逗号分隔
       var words = process.env.SPAM_WORDS;
       words.split(",").forEach((item) => {
         if (comment.get("comment").indexOf(item) >= 0) {
-          console.warn("检测到含有关键词!");
+          console.warn("检测到含有BAN关键词!");
           comment.set("isSpam", true);
           comment.setACL(new AV.ACL({ "*": { read: false } }));
           comment.save();
-          // 阻止被屏蔽的评论提交
           // comment.destroy();
         }
       });
